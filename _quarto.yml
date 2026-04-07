@@ -5,15 +5,17 @@ project:
 website:
   title: "Rosie Wood"
   navbar:
+    background: light
+    foreground: dark
     left:
-      - href: index.qmd
-        text: About
-      - href: cv.qmd
-        text: CV
-      - href: projects.qmd
-        text: Projects
-      - href: publications.qmd
-        text: Publications
+      - text: About
+        href: "#about"
+      - text: Projects
+        href: "#projects"
+      - text: CV
+        href: "#cv"
+      - text: Publications
+        href: "#publications"
     right:
       - icon: github
         href: https://github.com/rwood-97
@@ -22,6 +24,9 @@ website:
 
 format:
   html:
-    theme: flatly
+    theme: cosmo
     css: styles.css
     toc: false
+    include-in-header:
+      text: |
+        <link href="https://fonts.cdnfonts.com/css/giorgio" rel="stylesheet">

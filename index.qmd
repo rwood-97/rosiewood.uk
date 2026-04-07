@@ -2,12 +2,127 @@
 title: ""
 ---
 
-# Rosie Wood
+<!-- ── About ──────────────────────────────────────────────────── -->
+::: {#about .site-section .hero-section}
 
-**Research Software/Compute Engineer**
-Alan Turing Institute
+:::: {.hero}
 
-::: {.d-flex .gap-3 style="margin-top: 1rem;"}
-[{{< fa brands github >}} GitHub](https://github.com/rwood-97){.btn .btn-outline-secondary .btn-sm}
-[{{< fa brands linkedin >}} LinkedIn](https://linkedin.com/in/rosie-w-01616715b){.btn .btn-outline-secondary .btn-sm}
+::: {.hero-photo}
+![](images/photo.jpeg){.profile-photo}
 :::
+
+::: {.hero-text}
+# Rosie Wood {.giorgio}
+
+::: {.hero-role}
+Research Software Engineer · Alan Turing Institute
+:::
+
+I am a Research Software/Compute Engineer and member of the Research Engineering Group (REG) and Research Computing team at the Alan Turing Institute.
+I specialise in deploying software and models on GPU/HPC systems, developing open-source reproducible research software and applying computer vision and NLP to real-world research problems.
+
+::: {.hero-links}
+<a href="https://github.com/rwood-97" class="btn btn-outline-primary btn-sm"><i class="bi bi-github me-1"></i>GitHub</a>
+<a href="https://linkedin.com/in/rosie-w-01616715b" class="btn btn-outline-primary btn-sm"><i class="bi bi-linkedin me-1"></i>LinkedIn</a>
+:::
+:::
+
+::::
+
+:::
+
+<!-- ── Projects ────────────────────────────────────────────────── -->
+::: {#projects .site-section}
+
+::: {.projects-header}
+::: {.section-label}
+Projects
+:::
+::: {.sort-controls}
+<span class="toggle-label">Default</span>
+<label class="toggle-switch">
+  <input type="checkbox" id="sort-toggle">
+  <span class="toggle-slider"></span>
+</label>
+<span class="toggle-label">Most Recent</span>
+:::
+:::
+
+::: {#projects-list}
+
+::: {.project-card data-year="2023" data-order="1"}
+### [MapReader](https://github.com/maps-as-data/MapReader)
+*2023–present*
+
+Award-winning computer vision pipeline for large-scale analysis of historical maps.
+:::
+
+::: {.project-card data-year="2025" data-order="3"}
+### [t0-1](https://github.com/rwood-97/t0-1)
+*2025–2026*
+
+A RAG system which uses small language models fine-tuned for reasoning to answer domain specific queries (focused on NHS A-Z conditions).
+:::
+
+::: {.project-card data-year="2026" data-order="4"}
+### [Eden](https://github.com/alan-turing-institute/eden)
+*2026–present*
+
+A RAG system which uses small reasoning models to answer domain-specific queries about gardening (focused on RHS data).
+:::
+
+::: {.project-card data-year="2025" data-order="5"}
+### [multi_node_inference](https://github.com/rwood-97/multi_node_inference)
+*2025*
+
+A series of scripts for running multi-node inference with LLMs across multiple nodes on HPC using vLLM (including containerised workflows).
+:::
+
+::: {.project-card data-year="2024" data-order="2"}
+### [reginald](https://github.com/alan-turing-institute/reginald)
+*2024*
+
+A slack bot/chat interface which uses open source LLMs and RAG to answer queries about Turing internal data.
+:::
+
+:::
+
+:::
+
+<!-- ── CV ──────────────────────────────────────────────────────── -->
+::: {#cv .site-section}
+
+::: {.section-label}
+CV
+:::
+
+<!-- Add CV content here -->
+
+:::
+
+<!-- ── Publications ─────────────────────────────────────────────── -->
+::: {#publications .site-section}
+
+::: {.section-label}
+Publications
+:::
+
+*Auto-generated from [ORCID](https://orcid.org/0000-0003-1623-1949) at build time.*
+
+{{< include _pubs_content.qmd >}}
+
+:::
+
+<script>
+document.getElementById('sort-toggle').addEventListener('change', function () {
+  const list = document.getElementById('projects-list');
+  const cards = Array.from(list.querySelectorAll('.project-card'));
+
+  cards.sort((a, b) => this.checked
+    ? Number(b.dataset.year) - Number(a.dataset.year)
+    : Number(a.dataset.order) - Number(b.dataset.order)
+  );
+
+  cards.forEach(card => list.appendChild(card));
+});
+</script>

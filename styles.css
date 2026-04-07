@@ -1,26 +1,333 @@
-body {
-  font-family: "Inter", "Segoe UI", sans-serif;
+/* ── Palette ────────────────────────────────────────────────────── */
+:root {
+  --color-dark:   #040403;
+  --color-forest: #373e35;
+  --color-sage:   #8EB897;
+  --color-soft:   #3e5142;
+  --color-bg:     #e2e5e3;
+  --color-highlight: #8c37c9;
+
+  /* Bootstrap overrides */
+  --bs-primary:            #5B7553;
+  --bs-primary-rgb:        91, 117, 83;
+  --bs-link-color:         #5B7553;
+  --bs-link-color-rgb:     91, 117, 83;
+  --bs-link-hover-color:   #3d5038;
+  --bs-body-color:         #040403;
+  --bs-body-font-family:   "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bs-body-bg:            #ffffff;
 }
 
+/* ── Smooth scroll ──────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  /* Offset scroll target below fixed navbar (~56px) */
+  scroll-padding-top: 70px;
+}
+
+/* ── Base ───────────────────────────────────────────────────────── */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--color-dark);
+  background: var(--color-bg);
+}
+
+a {
+  color: var(--color-forest);
+}
+a:hover {
+  color: #8c37c9;
+}
+
+/* ── Navbar ─────────────────────────────────────────────────────── */
+.navbar {
+  font-family: "Giorgio", "Big Shoulders Display", "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  background-color: #ffffff !important;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-dark) !important;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--color-forest) !important;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--color-highlight) !important;
+}
+
+/* ── Sections ───────────────────────────────────────────────────── */
+.site-section {
+  padding: 4.5rem 0;
+}
+
+.site-section + .site-section {
+  border-top: none;
+  padding-top: 0;
+}
+
+.site-section + .site-section::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--color-forest);
+  width: calc(100%);
+  margin: 0 0rem 4.5rem;
+}
+
+.hero-section {
+  padding-top: 3rem;
+}
+
+.section-label {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--color-forest);
+  margin-bottom: 2.5rem;
+}
+
+/* ── Hero ───────────────────────────────────────────────────────── */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.giorgio,
+h1.giorgio {
+  font-family: "Giorgio", "Big Shoulders Display", "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  color: var(--color-dark);
+  border: none;
+  padding: 0;
+}
+
+.hero-text p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 0.95rem;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  line-height: 1.65;
+  color: #555;
+  margin-top: 0.75rem;
+}
+
+.hero-role {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-dark);
+  margin-bottom: 0;
+  letter-spacing: 0.01em;
+}
+
+.hero-links {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* ── Profile photo ──────────────────────────────────────────────── */
+.hero-photo {
+  flex-shrink: 0;
+}
+
+.profile-photo {
+  width: 220px !important;
+  height: 220px !important;
+  object-fit: cover;
+  object-position: center 55%;
+  box-shadow: 0 4px 24px rgba(91, 117, 83, 0.12);
+  display: block;
+  margin: 0;
+}
+
+/* ── Buttons ────────────────────────────────────────────────────── */
+.btn-outline-primary {
+  --bs-btn-color:              var(--color-forest);
+  --bs-btn-border-color:       var(--color-forest);
+  --bs-btn-hover-color:        #fff;
+  --bs-btn-hover-bg:           var(--color-forest);
+  --bs-btn-hover-border-color: var(--color-forest);
+  --bs-btn-active-bg:          var(--color-highlight);
+  --bs-btn-active-border-color: var(--color-highlight);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* ── Project sort controls ──────────────────────────────────────── */
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.projects-header .section-label {
+  margin-bottom: 0;
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.toggle-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  user-select: none;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-forest);
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 3px;
+  top: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.toggle-switch input:checked + .toggle-slider::before {
+  transform: translateX(16px);
+}
+
+/* ── Project cards ──────────────────────────────────────────────── */
 .project-card {
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  padding: 1.25rem;
+  border: 1px solid var(--color-bgW);
+  border-radius: 0px;
+  padding: 1.25rem 1.5rem;
   margin-bottom: 1rem;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
 }
 
 .project-card:hover {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(91, 117, 83, 0.12);
+  border-color: var(--color-sage);
+  transform: translateY(-1px);
+  background-color: #fff;
 }
 
+.project-card h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.project-card em {
+  font-size: 0.8rem;
+  color: #888;
+  font-style: normal;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Section headings (Projects, CV, etc.) ──────────────────────── */
+h2 {
+  font-weight: 800;
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+/* ── Publications ───────────────────────────────────────────────── */
 .pub-item {
-  padding: 0.75rem 0;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--color-forest);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
+.pub-item:last-child {
+  border-bottom: none;
+}
+
+/* ── CV ─────────────────────────────────────────────────────────── */
 .cv-section h3 {
-  border-bottom: 2px solid #2c7bb6;
+  border-bottom: 2px solid var(--color-sage);
   padding-bottom: 0.25rem;
   margin-top: 2rem;
+  color: var(--color-forest);
+}
+
+/* ── Responsive ─────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-links {
+    justify-content: center;
+  }
+
+  .giorgio,
+  h1.giorgio {
+    font-size: 3rem;
+  }
+
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .site-section {
+    padding: 3rem 0;
+  }
 }

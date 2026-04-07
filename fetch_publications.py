@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch publications from ORCID and write publications.qmd."""
+"""Fetch publications from ORCID and write publications content."""
 
 import json
 import sys
@@ -10,7 +10,8 @@ ORCID_ID = "0000-0003-1623-1949"
 API_BASE = f"https://pub.orcid.org/v3.0/{ORCID_ID}"
 HEADERS = {"Accept": "application/json"}
 
-QMD_PATH = "publications.qmd"
+# Content-only file (no frontmatter) — included in both index.qmd and publications.qmd
+CONTENT_PATH = "_pubs_content.qmd"
 
 
 def fetch_json(url: str) -> dict:
@@ -51,16 +52,8 @@ def get_works() -> list[dict]:
     return summaries
 
 
-def build_qmd(works: list[dict]) -> str:
-    lines = [
-        "---",
-        'title: "Publications"',
-        "---",
-        "",
-        "*This page is auto-generated from [ORCID](https://orcid.org/0000-0003-1623-1949) at build time.*",
-        "",
-        "<!-- publications start -->",
-    ]
+def build_content(works: list[dict]) -> str:
+    lines = ["<!-- publications start -->"]
 
     if not works:
         lines.append("\n*No publications found.*\n")
@@ -103,10 +96,10 @@ def main():
         sys.exit(1)
 
     print(f"Found {len(works)} works.")
-    content = build_qmd(works)
-    with open(QMD_PATH, "w") as f:
+    content = build_content(works)
+    with open(CONTENT_PATH, "w") as f:
         f.write(content)
-    print(f"Written {QMD_PATH}")
+    print(f"Written {CONTENT_PATH}")
 
 
 if __name__ == "__main__":
