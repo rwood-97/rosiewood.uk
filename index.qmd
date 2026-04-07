@@ -19,11 +19,12 @@ Research Software Engineer · Alan Turing Institute
 :::
 
 I am a Research Software/Compute Engineer and member of the Research Engineering Group (REG) and Research Computing team at the Alan Turing Institute.
-I specialise in deploying software and models on GPU/HPC systems, developing open-source reproducible research software and applying computer vision and NLP to real-world research problems.
+I specialise in deploying software and models on GPU/HPC systems, developing open-source reproducible research software and applying computer vision and LLMs to real-world research problems.
 
 ::: {.hero-links}
 <a href="https://github.com/rwood-97" class="btn btn-outline-primary btn-sm"><i class="bi bi-github me-1"></i>GitHub</a>
 <a href="https://linkedin.com/in/rosie-w-01616715b" class="btn btn-outline-primary btn-sm"><i class="bi bi-linkedin me-1"></i>LinkedIn</a>
+<a href="https://orcid.org/0000-0003-1623-1949" class="btn btn-outline-primary btn-sm"><i class="fa-brands fa-orcid me-1"></i>ORCID</a>
 :::
 :::
 
