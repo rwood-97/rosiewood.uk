@@ -18,7 +18,7 @@ title: ""
 Research Software Engineer · Alan Turing Institute
 :::
 
-I am a Research Software/Compute Engineer and member of the Research Engineering Group (REG) and Research Computing team at the Alan Turing Institute.
+I am a Research Software Engineer and member of the Research Engineering Group (REG) and Research Computing team at the Alan Turing Institute.
 I specialise in deploying software and models on GPU/HPC systems, developing open-source reproducible research software and applying computer vision and LLMs to real-world research problems.
 
 ::: {.hero-links}
@@ -91,15 +91,15 @@ A slack bot/chat interface which uses open source LLMs and RAG to answer queries
 :::
 
 <!-- ── CV ──────────────────────────────────────────────────────── -->
-::: {#cv .site-section}
+<!-- ::: {#cv .site-section}
 
 ::: {.section-label}
 CV
 :::
 
-<!-- Add CV content here -->
+Add CV content here
 
-:::
+::: -->
 
 <!-- ── Publications ─────────────────────────────────────────────── -->
 ::: {#publications .site-section}

@@ -12,8 +12,6 @@ website:
         href: "#about"
       - text: Projects
         href: "#projects"
-      - text: CV
-        href: "#cv"
       - text: Publications
         href: "#publications"
     right:
