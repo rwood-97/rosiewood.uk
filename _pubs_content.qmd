@@ -1,2 +1,32 @@
 <!-- publications start -->
+::: {.pub-item}
+**[Unravelling 2,4-D – biochar interactions by molecular dynamics: adsorption modes and surface functionalities](https://doi.org/10.1016/j.biombioe.2026.109080)**
+<br>*Biomass and Bioenergy* · 2026
+:::
+
+::: {.pub-item}
+**[MapReader: Open software for the visual analysis of maps](https://doi.org/10.21105/joss.06434)**
+<br>*Journal of Open Source Software* · 2024
+:::
+
+::: {.pub-item}
+**[Reading Maps at a Distance: Texts on Maps as New Historical Data](https://doi.org/10.1080/03085694.2024.2453336)**
+<br>*Imago Mundi* · 2024
+:::
+
+::: {.pub-item}
+**[Developing a molecular-level understanding of biochar materials using public characterization data](https://doi.org/10.1016/j.xcrp.2024.102036)**
+<br>*Cell Reports Physical Science* · 2024
+:::
+
+::: {.pub-item}
+**[Developing realistic molecular models of biochars](https://doi.org/10.1016/j.xcrp.2024.102037)**
+<br>*Cell Reports Physical Science* · 2024
+:::
+
+::: {.pub-item}
+**[MapReader](https://doi.org/10.5281/ZENODO.8189653)**
+<br>*Zenodo* · 2023
+:::
+
 <!-- publications end -->

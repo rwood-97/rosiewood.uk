@@ -58,28 +58,28 @@ Projects
 Award-winning computer vision pipeline for large-scale analysis of historical maps.
 :::
 
-::: {.project-card data-year="2025" data-order="3"}
+::: {.project-card data-year="2025" data-order="2"}
 ### [t0-1](https://github.com/alan-turing-institute/t0-1)
 *2025–2026*
 
 A RAG system which uses small language models fine-tuned for reasoning to answer domain specific queries (focused on NHS A-Z conditions).
 :::
 
-::: {.project-card data-year="2026" data-order="4"}
+::: {.project-card data-year="2026" data-order="3"}
 ### [Eden](https://github.com/rwood-97/eden)
 *2026–present*
 
 A RAG system which uses small reasoning models to answer domain-specific queries about gardening (focused on RHS data).
 :::
 
-::: {.project-card data-year="2025" data-order="5"}
+::: {.project-card data-year="2025" data-order="4"}
 ### [multi_node_inference](https://github.com/rwood-97/multi_node_inference)
 *2025*
 
 A series of scripts for running multi-node inference with LLMs across multiple nodes on HPC using vLLM (including containerised workflows).
 :::
 
-::: {.project-card data-year="2024" data-order="2"}
+::: {.project-card data-year="2024" data-order="5"}
 ### [reginald](https://github.com/alan-turing-institute/reginald)
 *2024*
 
