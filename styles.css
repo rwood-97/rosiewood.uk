@@ -3,7 +3,7 @@
   --color-dark:   #040403;
   --color-forest: #373e35;
   --color-sage:   #8EB897;
-  --color-soft:   #3e5142;
+  --color-soft:   #4d5d54;
   --color-bg:     #e2e5e3;
   --color-highlight: #8c37c9;
 
@@ -130,7 +130,7 @@ h1.giorgio {
   text-transform: none;
   letter-spacing: 0.02em;
   line-height: 1.65;
-  color: #555;
+  color: var(--color-soft);
   margin-top: 0.75rem;
 }
 
@@ -251,7 +251,7 @@ h1.giorgio {
   position: relative;
   border: 1px solid var(--color-bgW);
   border-radius: 0px;
-  padding: 0.5rem 0.85rem;
+  padding: 0.25rem 0.85rem;
   margin-bottom: 0.4rem;
   transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
   cursor: pointer;
@@ -273,8 +273,8 @@ h1.giorgio {
 }
 
 .project-card h3 a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--color-soft);
+  text-decoration: underline;
   transition: color 0.2s;
 }
 
@@ -288,6 +288,10 @@ h1.giorgio {
   font-style: normal;
   display: block;
   margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: var(--color-forest);
 }
 
 /* ── Section headings (Projects, CV, etc.) ──────────────────────── */
@@ -304,8 +308,17 @@ h3 {
 /* ── Publications ───────────────────────────────────────────────── */
 .pub-item {
   padding: 0.85rem 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
+  color: var(--color-forest);
+}
+
+.pub-item strong a {
+  color: var(--color-soft);
+}
+
+.pub-item em {
+  color: var(--color-forest);
 }
 
 /* ── CV ─────────────────────────────────────────────────────────── */
