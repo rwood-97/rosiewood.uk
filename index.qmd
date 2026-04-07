@@ -101,6 +101,32 @@ Add CV content here
 
 ::: -->
 
+<!-- ── Talks, Presentations & Recognition ───────────────────────── -->
+::: {#talks .site-section}
+
+::: {.section-label}
+Talks & Presentations
+:::
+
+- ["Porting Microsoft's Aurora to Dawn"](https://www.cosec.ac.uk/calendar/annual-conference/2025-conference/) \[CoSeC/CIUK 2025, Manchester\]. *12/2025*
+- [Isambard-AI Workshop](https://www.turing.ac.uk/events/brics-x-turing-isambard-ai-workshop) \[The Alan Turing Institute, London\]. *03/2026*
+- Intro to HPC Workshop \[The Alan Turing Institute, London\]. *11/2025*
+- [MapReader Autumn Data/Culture Workshop](https://www.turing.ac.uk/events/autumn-dataculture-workshop) \[The Alan Turing Institute, London\]. *10/2024*
+- [MapReader Workshop](https://pretalx.com/spathum24/talk/FYVZZG/) \[Spatial Humanities 2024, Bamberg, Germany\]. *09/2024*
+- [MapReader Summer Data/Culture Workshop](https://www.lancaster.ac.uk/events/the-dataculture-project-at-the-alan-turing-institute-is-offering-a-workshop-on-working-with-big-historical-data-from-maps-and-newspapers-in-lancaster-this-june/) \[Lancaster University\]. *06/2024*
+- [MapReader Spring Data/Culture Workshop](https://www.turing.ac.uk/events/spring-dataculture-workshop-search-inside-maps-mapreader) \[The Alan Turing Institute, London\]. *04/2024*
+- [MapReader Public Launch Event](https://livingwithmachines.ac.uk/event/mapreader-launch/) \[The Alan Turing Institute, London\]. *06/2023*
+- Maps as Data Workshop \[BMA House, London\]. *03/2023*
+
+::: {.section-label}
+Recognition
+:::
+
+- Featured in SC25 HPC Ignites 'Women in HPC' series. *03/2025*
+- MapReader awarded the 2023 Roy Rosenzweig Prize for Creativity in Digital History. *12/2023*
+
+:::
+
 <!-- ── Publications ─────────────────────────────────────────────── -->
 ::: {#publications .site-section}
 

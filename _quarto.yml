@@ -12,6 +12,8 @@ website:
         href: "#about"
       - text: Projects
         href: "#projects"
+      - text: Talks & Recognition
+        href: "#talks"
       - text: Publications
         href: "#publications"
     right:
