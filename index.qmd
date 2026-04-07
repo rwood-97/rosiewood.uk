@@ -1,0 +1,13 @@
+---
+title: ""
+---
+
+# Rosie Wood
+
+**Research Software/Compute Engineer**
+Alan Turing Institute
+
+::: {.d-flex .gap-3 style="margin-top: 1rem;"}
+[{{< fa brands github >}} GitHub](https://github.com/rwood-97){.btn .btn-outline-secondary .btn-sm}
+[{{< fa brands linkedin >}} LinkedIn](https://linkedin.com/in/rosie-w-01616715b){.btn .btn-outline-secondary .btn-sm}
+:::

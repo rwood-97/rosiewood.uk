@@ -1,0 +1,26 @@
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.project-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pub-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cv-section h3 {
+  border-bottom: 2px solid #2c7bb6;
+  padding-bottom: 0.25rem;
+  margin-top: 2rem;
+}

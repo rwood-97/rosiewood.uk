@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Rosie Wood"
+  navbar:
+    left:
+      - href: index.qmd
+        text: About
+      - href: cv.qmd
+        text: CV
+      - href: projects.qmd
+        text: Projects
+      - href: publications.qmd
+        text: Publications
+    right:
+      - icon: github
+        href: https://github.com/rwood-97
+      - icon: linkedin
+        href: https://linkedin.com/in/rosie-w-01616715b
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: false
