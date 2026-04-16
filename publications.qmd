@@ -1,5 +1,0 @@
----
-title: "Publications"
----
-
-{{< include _pubs_content.qmd >}}
